@@ -1,0 +1,10 @@
+c:\users\pernille\documents\visual studio 2015\Projects\SemesterProject\SemesterProject\bin\Debug\SemesterProject.exe.config
+c:\users\pernille\documents\visual studio 2015\Projects\SemesterProject\SemesterProject\bin\Debug\SemesterProject.exe
+c:\users\pernille\documents\visual studio 2015\Projects\SemesterProject\SemesterProject\bin\Debug\SemesterProject.pdb
+c:\users\pernille\documents\visual studio 2015\Projects\SemesterProject\SemesterProject\bin\Debug\EntityFramework.dll
+c:\users\pernille\documents\visual studio 2015\Projects\SemesterProject\SemesterProject\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\pernille\documents\visual studio 2015\Projects\SemesterProject\SemesterProject\bin\Debug\EntityFramework.xml
+c:\users\pernille\documents\visual studio 2015\Projects\SemesterProject\SemesterProject\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\pernille\documents\visual studio 2015\Projects\SemesterProject\SemesterProject\obj\Debug\SemesterProject.csprojResolveAssemblyReference.cache
+c:\users\pernille\documents\visual studio 2015\Projects\SemesterProject\SemesterProject\obj\Debug\SemesterProject.exe
+c:\users\pernille\documents\visual studio 2015\Projects\SemesterProject\SemesterProject\obj\Debug\SemesterProject.pdb
