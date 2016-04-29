@@ -52,7 +52,7 @@ namespace SemesterProjectInheritanceFluentAPI
     {
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Student>().Property(s ⇒ s.FirstMidName)
+            modelBuilder.Entity<Student>().Property(s⇒ s.FirstMidName)
             .HasColumnName("FirstName");
         }
         public virtual DbSet<Course> Courses { get; set; }

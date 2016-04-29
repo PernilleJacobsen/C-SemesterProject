@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
 using System.Linq;
 using System.Text;
@@ -7,54 +8,105 @@ using System.Threading.Tasks;
 
 namespace SemesterProject
 {
-    //dette projekt er forløber for brug af fluent api - men uden inheritance....
-
     class Program
     {
-        static void Main(string[] args) { }
+        static void Main(string[] args)
+        {
+            using (var context = new SchoolContext())
+            {
+
+                var student = new Student
+                {
+                    FirstMidName = "Jeanette",
+                    LastName = "Borring-Møller",
+                    EnrollmentDate = DateTime.Parse(DateTime.Today.ToString())
+                };
+
+                context.People.Add(student);
+
+                var student1 = new Student
+                {
+                    FirstMidName = "Pernille",
+                    LastName = "Jacobsen",
+                    EnrollmentDate = DateTime.Parse(DateTime.Today.ToString())
+                };
+
+                context.People.Add(student1);
+
+                var teacher = new Teacher
+                {
+                    FirstMidName = "Anders",
+                    LastName = "Kalhauge",
+                    HireDate = DateTime.Parse(DateTime.Today.ToString())
+                };
+
+                context.People.Add(teacher);
+
+                var teacher1 = new Teacher
+                {
+                    FirstMidName = "Anden",
+                    LastName = "Lærer",
+                    HireDate = DateTime.Parse(DateTime.Today.ToString())
+                };
+
+                context.People.Add(teacher1);
+                context.SaveChanges();
+            }
+        }
     }
-
-    public enum Grade
-    {
-        A, B, C, D, F
-    }
-
-    public class Enrollment
-    {
-        public int EnrollmentID { get; set; }
-        public int CourseID { get; set; }
-        public int StudentID { get; set; }
-        public Grade? Grade { get; set; }
-
-        public virtual Course Course { get; set; }
-        public virtual Student Student { get; set; }
-    }
-
-    public class Student
+   
+    public abstract partial class Person
     {
         public int ID { get; set; }
-        public string LastName { get; set; }
         public string FirstMidName { get; set; }
-
-        public DateTime EnrollmentDate { get; set; }
-
-        public virtual ICollection<Enrollment> Enrollments { get; set; }
+        public string LastName { get; set; }
     }
-
-    public class Course
+    public partial class Student : Person
     {
-        public int CourseID { get; set; }
-        public string Title { get; set; }
-        public int Credits { get; set; }
-
-        public virtual ICollection<Enrollment> Enrollments { get; set; }
+        public System.DateTime EnrollmentDate { get; set; }
     }
-
-    public class MyContext : DbContext
+    public partial class Teacher : Person
     {
-        public virtual DbSet<Course> Courses { get; set; }
-        public virtual DbSet<Enrollment> Enrollments { get; set; }
-        public virtual DbSet<Student> Students { get; set; }
+        public System.DateTime HireDate { get; set; }
     }
+    public partial class SchoolContext : DbContext
+    {
+        public virtual DbSet<Person> People { get; set; }
 
+        public static string CONN =
+    @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=SCHOOLDB9;
+    Integrated Security=True;Connect Timeout=30;Encrypt=False;
+    TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        //@"Data Source=(localdb)\mssqllocaldb;Integrated Security=True";  
+
+        public SchoolContext() : base(CONN)
+        {
+            Database.SetInitializer<SchoolContext>(
+          //new DropCreateDatabaseIfModelChanges<SchoolContext>()
+          new DropCreateDatabaseAlways<SchoolContext>()
+          );
+        }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+           //modelBuilder.Entity<Person>()
+          //  .Property(p => p.ID)
+          //  .HasDatabaseGenerationOption(DatabaseGenerationOption.None);
+
+            modelBuilder.Entity<Teacher>().Map(m =>
+            {
+                m.MapInheritedProperties();
+                m.ToTable("Teacher");
+            });
+
+            modelBuilder.Entity<Student>().Map(m =>
+            {
+                m.MapInheritedProperties();
+                m.ToTable("Student");
+            });
+        }
+    }
 }
+
+    
+

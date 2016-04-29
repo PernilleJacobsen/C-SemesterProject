@@ -8,3 +8,6 @@ c:\users\pernille\documents\visual studio 2015\Projects\SemesterProject\Semester
 c:\users\pernille\documents\visual studio 2015\Projects\SemesterProject\SemesterProject\obj\Debug\SemesterProject.csprojResolveAssemblyReference.cache
 c:\users\pernille\documents\visual studio 2015\Projects\SemesterProject\SemesterProject\obj\Debug\SemesterProject.exe
 c:\users\pernille\documents\visual studio 2015\Projects\SemesterProject\SemesterProject\obj\Debug\SemesterProject.pdb
+C:\Users\Pernille\Source\Repos\C-SemesterProject\SemesterProject\SemesterProject\bin\Debug\SemesterProject.exe.config
+C:\Users\Pernille\Source\Repos\C-SemesterProject\SemesterProject\SemesterProject\obj\Debug\SemesterProject.exe
+C:\Users\Pernille\Source\Repos\C-SemesterProject\SemesterProject\SemesterProject\obj\Debug\SemesterProject.pdb

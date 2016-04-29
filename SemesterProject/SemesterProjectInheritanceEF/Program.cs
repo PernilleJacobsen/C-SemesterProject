@@ -33,23 +33,23 @@ namespace SemesterProjectInheritanceEF
                 
                 context.People.Add(student1);
 
-                var techaer = new Teacher
+                var teacher = new Teacher
                 {
                     FirstMidName = "Anders",
                     LastName = "Kalhauge",
                     HireDate = DateTime.Parse(DateTime.Today.ToString())
                 };
 
-                context.People.Add(techaer);
+                context.People.Add(teacher);
 
-                var techaer1 = new Teacher
+                var teacher1 = new Teacher
                 {
                     FirstMidName = "Anden",
                     LastName = "Lærer",
                     HireDate = DateTime.Parse(DateTime.Today.ToString())
                 };
 
-                context.People.Add(techaer1);
+                context.People.Add(teacher1);
                 context.SaveChanges();
             }
         }
@@ -71,13 +71,15 @@ namespace SemesterProjectInheritanceEF
     public partial class SchoolContext : DbContext
     {
         public static string CONN =
-    @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=SCHOOLDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+    @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=SCHOOLDB;
+    Integrated Security=True;Connect Timeout=30;Encrypt=False;
+    TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
         //@"Data Source=(localdb)\mssqllocaldb;Integrated Security=True";  
 
         public SchoolContext() : base(CONN)
         {
             Database.SetInitializer<SchoolContext>(
-          //new DropCreateDatabaseAlways<PetClubContext>()
+          //new DropCreateDatabaseIfModelChanges<SchoolContext>()
           new DropCreateDatabaseAlways<SchoolContext>()
           );
         }
