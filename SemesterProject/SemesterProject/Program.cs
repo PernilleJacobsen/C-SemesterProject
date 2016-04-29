@@ -17,6 +17,7 @@ namespace SemesterProject
 
                 var student = new Student
                 {
+                    ID = 101,
                     FirstMidName = "Jeanette",
                     LastName = "Borring-Møller",
                     EnrollmentDate = DateTime.Parse(DateTime.Today.ToString())
@@ -26,6 +27,7 @@ namespace SemesterProject
 
                 var student1 = new Student
                 {
+                    ID = 102,
                     FirstMidName = "Pernille",
                     LastName = "Jacobsen",
                     EnrollmentDate = DateTime.Parse(DateTime.Today.ToString())
@@ -35,6 +37,7 @@ namespace SemesterProject
 
                 var teacher = new Teacher
                 {
+                    ID = 201,
                     FirstMidName = "Anders",
                     LastName = "Kalhauge",
                     HireDate = DateTime.Parse(DateTime.Today.ToString())
@@ -44,6 +47,7 @@ namespace SemesterProject
 
                 var teacher1 = new Teacher
                 {
+                    ID = 202,
                     FirstMidName = "Anden",
                     LastName = "Lærer",
                     HireDate = DateTime.Parse(DateTime.Today.ToString())
@@ -89,9 +93,10 @@ namespace SemesterProject
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-           //modelBuilder.Entity<Person>()
-          //  .Property(p => p.ID)
-          //  .HasDatabaseGenerationOption(DatabaseGenerationOption.None);
+            modelBuilder.Entity<Person>()
+             .Property(p => p.ID)
+             .HasDatabaseGeneratedOption(DatabaseGeneratedOption.None);
+           //.HasDatabaseGenerationOption(DatabaseGenerationOption.None);
 
             modelBuilder.Entity<Teacher>().Map(m =>
             {

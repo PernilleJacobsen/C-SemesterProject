@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using System.Linq;
@@ -30,26 +31,26 @@ namespace SemesterProjectInheritanceEF
                     LastName = "Jacobsen",
                     EnrollmentDate = DateTime.Parse(DateTime.Today.ToString())
                 };
-                
+
                 context.People.Add(student1);
 
-                var teacher = new Teacher
+                var techaer = new Teacher
                 {
                     FirstMidName = "Anders",
                     LastName = "Kalhauge",
                     HireDate = DateTime.Parse(DateTime.Today.ToString())
                 };
 
-                context.People.Add(teacher);
+                context.People.Add(techaer);
 
-                var teacher1 = new Teacher
+                var techaer1 = new Teacher
                 {
                     FirstMidName = "Anden",
                     LastName = "Lærer",
                     HireDate = DateTime.Parse(DateTime.Today.ToString())
                 };
 
-                context.People.Add(teacher1);
+                context.People.Add(techaer1);
                 context.SaveChanges();
             }
         }
@@ -60,10 +61,12 @@ namespace SemesterProjectInheritanceEF
         public string FirstMidName { get; set; }
         public string LastName { get; set; }
     }
+
     public partial class Student : Person
     {
         public System.DateTime EnrollmentDate { get; set; }
     }
+
     public partial class Teacher : Person
     {
         public System.DateTime HireDate { get; set; }
@@ -71,15 +74,13 @@ namespace SemesterProjectInheritanceEF
     public partial class SchoolContext : DbContext
     {
         public static string CONN =
-    @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=SCHOOLDB;
-    Integrated Security=True;Connect Timeout=30;Encrypt=False;
-    TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+    @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=SCHOOLDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
         //@"Data Source=(localdb)\mssqllocaldb;Integrated Security=True";  
 
         public SchoolContext() : base(CONN)
         {
             Database.SetInitializer<SchoolContext>(
-          //new DropCreateDatabaseIfModelChanges<SchoolContext>()
+          //new DropCreateDatabaseAlways<PetClubContext>()
           new DropCreateDatabaseAlways<SchoolContext>()
           );
         }
@@ -87,8 +88,10 @@ namespace SemesterProjectInheritanceEF
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             //throw new UnintentionalCodeFirstException();
+
         }
 
         public virtual DbSet<Person> People { get; set; }
     }
 }
+

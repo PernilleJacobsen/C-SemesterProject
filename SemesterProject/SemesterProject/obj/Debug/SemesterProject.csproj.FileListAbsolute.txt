@@ -11,3 +11,13 @@ c:\users\pernille\documents\visual studio 2015\Projects\SemesterProject\Semester
 C:\Users\Pernille\Source\Repos\C-SemesterProject\SemesterProject\SemesterProject\bin\Debug\SemesterProject.exe.config
 C:\Users\Pernille\Source\Repos\C-SemesterProject\SemesterProject\SemesterProject\obj\Debug\SemesterProject.exe
 C:\Users\Pernille\Source\Repos\C-SemesterProject\SemesterProject\SemesterProject\obj\Debug\SemesterProject.pdb
+C:\Users\Jeanette\Source\Repos\C-SemesterProject\SemesterProject\SemesterProject\bin\Debug\SemesterProject.exe.config
+C:\Users\Jeanette\Source\Repos\C-SemesterProject\SemesterProject\SemesterProject\obj\Debug\SemesterProject.exe
+C:\Users\Jeanette\Source\Repos\C-SemesterProject\SemesterProject\SemesterProject\obj\Debug\SemesterProject.pdb
+C:\Users\Jeanette\Source\Repos\C-SemesterProject\SemesterProject\SemesterProject\bin\Debug\SemesterProject.exe
+C:\Users\Jeanette\Source\Repos\C-SemesterProject\SemesterProject\SemesterProject\bin\Debug\SemesterProject.pdb
+C:\Users\Jeanette\Source\Repos\C-SemesterProject\SemesterProject\SemesterProject\bin\Debug\EntityFramework.dll
+C:\Users\Jeanette\Source\Repos\C-SemesterProject\SemesterProject\SemesterProject\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jeanette\Source\Repos\C-SemesterProject\SemesterProject\SemesterProject\bin\Debug\EntityFramework.xml
+C:\Users\Jeanette\Source\Repos\C-SemesterProject\SemesterProject\SemesterProject\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jeanette\Source\Repos\C-SemesterProject\SemesterProject\SemesterProject\obj\Debug\SemesterProject.csprojResolveAssemblyReference.cache
