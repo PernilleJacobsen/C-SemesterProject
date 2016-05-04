@@ -21,3 +21,10 @@ C:\Users\Jeanette\Source\Repos\C-SemesterProject\SemesterProject\SemesterProject
 C:\Users\Jeanette\Source\Repos\C-SemesterProject\SemesterProject\SemesterProject\bin\Debug\EntityFramework.xml
 C:\Users\Jeanette\Source\Repos\C-SemesterProject\SemesterProject\SemesterProject\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Jeanette\Source\Repos\C-SemesterProject\SemesterProject\SemesterProject\obj\Debug\SemesterProject.csprojResolveAssemblyReference.cache
+C:\Users\Pernille\Source\Repos\C-SemesterProject\SemesterProject\SemesterProject\bin\Debug\SemesterProject.exe
+C:\Users\Pernille\Source\Repos\C-SemesterProject\SemesterProject\SemesterProject\bin\Debug\SemesterProject.pdb
+C:\Users\Pernille\Source\Repos\C-SemesterProject\SemesterProject\SemesterProject\bin\Debug\EntityFramework.dll
+C:\Users\Pernille\Source\Repos\C-SemesterProject\SemesterProject\SemesterProject\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Pernille\Source\Repos\C-SemesterProject\SemesterProject\SemesterProject\bin\Debug\EntityFramework.xml
+C:\Users\Pernille\Source\Repos\C-SemesterProject\SemesterProject\SemesterProject\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Pernille\Source\Repos\C-SemesterProject\SemesterProject\SemesterProject\obj\Debug\SemesterProject.csprojResolveAssemblyReference.cache
