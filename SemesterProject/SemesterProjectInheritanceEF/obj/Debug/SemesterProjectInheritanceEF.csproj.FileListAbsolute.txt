@@ -8,3 +8,13 @@ C:\Users\Pernille\Documents\Visual Studio 2015\Projects\SemesterProject\Semester
 C:\Users\Pernille\Documents\Visual Studio 2015\Projects\SemesterProject\SemesterProjectInheritanceEF\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Pernille\Documents\Visual Studio 2015\Projects\SemesterProject\SemesterProjectInheritanceEF\obj\Debug\SemesterProjectInheritanceEF.exe
 C:\Users\Pernille\Documents\Visual Studio 2015\Projects\SemesterProject\SemesterProjectInheritanceEF\obj\Debug\SemesterProjectInheritanceEF.pdb
+C:\Users\Jeanette\Source\Repos\C-SemesterProject\SemesterProject\SemesterProjectInheritanceEF\bin\Debug\SemesterProjectInheritanceEF.exe.config
+C:\Users\Jeanette\Source\Repos\C-SemesterProject\SemesterProject\SemesterProjectInheritanceEF\obj\Debug\SemesterProjectInheritanceEF.exe
+C:\Users\Jeanette\Source\Repos\C-SemesterProject\SemesterProject\SemesterProjectInheritanceEF\obj\Debug\SemesterProjectInheritanceEF.pdb
+C:\Users\Jeanette\Source\Repos\C-SemesterProject\SemesterProject\SemesterProjectInheritanceEF\bin\Debug\SemesterProjectInheritanceEF.exe
+C:\Users\Jeanette\Source\Repos\C-SemesterProject\SemesterProject\SemesterProjectInheritanceEF\bin\Debug\SemesterProjectInheritanceEF.pdb
+C:\Users\Jeanette\Source\Repos\C-SemesterProject\SemesterProject\SemesterProjectInheritanceEF\bin\Debug\EntityFramework.dll
+C:\Users\Jeanette\Source\Repos\C-SemesterProject\SemesterProject\SemesterProjectInheritanceEF\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jeanette\Source\Repos\C-SemesterProject\SemesterProject\SemesterProjectInheritanceEF\bin\Debug\EntityFramework.xml
+C:\Users\Jeanette\Source\Repos\C-SemesterProject\SemesterProject\SemesterProjectInheritanceEF\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jeanette\Source\Repos\C-SemesterProject\SemesterProject\SemesterProjectInheritanceEF\obj\Debug\SemesterProjectInheritanceEF.csprojResolveAssemblyReference.cache
