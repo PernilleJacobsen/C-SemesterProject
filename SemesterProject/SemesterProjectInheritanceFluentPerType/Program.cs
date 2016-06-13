@@ -51,6 +51,23 @@ namespace SemesterProjectInheritanceFluentPerType
 
                 context.People.Add(techaer1);
                 context.SaveChanges();
+                /*
+                Console.ReadKey();
+
+                //bruger LINQ til at hente data fra databasen
+
+                var query = from p in context.People select p;
+
+                //itererer over query for at hente navne
+                foreach(var fornavn in query)
+                {
+                    Console.WriteLine(
+                        fornavn.FirstMidName);
+                }
+
+                Console.ReadKey();
+               */ 
+
             }
         }
     }
@@ -81,7 +98,6 @@ namespace SemesterProjectInheritanceFluentPerType
         public SchoolContext() : base(CONN)
         {
             Database.SetInitializer<SchoolContext>(
-          //new DropCreateDatabaseAlways<PetClubContext>()
           new DropCreateDatabaseAlways<SchoolContext>()
           );
         }
@@ -91,6 +107,8 @@ namespace SemesterProjectInheritanceFluentPerType
 
             modelBuilder.Entity<Student>().ToTable("Student");
             modelBuilder.Entity<Teacher>().ToTable("Teacher");
+            //modelBuilder.Entity<Student>().ToTable("Eksamenstabel");
+
         }
 
     }

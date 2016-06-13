@@ -13,6 +13,7 @@ namespace SemesterProjectInheritanceEF
     {
         static void Main(string[] args)
         {
+            //using i stedet for try and finally
             using (var context = new SchoolContext())
             {
 
@@ -34,14 +35,14 @@ namespace SemesterProjectInheritanceEF
 
                 context.People.Add(student1);
 
-                var techaer = new Teacher
+                var teacher = new Teacher
                 {
                     FirstMidName = "Anders",
                     LastName = "Kalhauge",
                     HireDate = DateTime.Parse(DateTime.Today.ToString())
                 };
 
-                context.People.Add(techaer);
+                context.People.Add(teacher);
 
                 var techaer1 = new Teacher
                 {
@@ -80,7 +81,6 @@ namespace SemesterProjectInheritanceEF
         public SchoolContext() : base(CONN)
         {
             Database.SetInitializer<SchoolContext>(
-          //new DropCreateDatabaseAlways<PetClubContext>()
           new DropCreateDatabaseAlways<SchoolContext>()
           );
         }

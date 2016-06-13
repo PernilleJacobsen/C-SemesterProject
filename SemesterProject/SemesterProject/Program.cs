@@ -17,6 +17,8 @@ namespace SemesterProject
 
                 var student = new Student
                 {
+                    //vi sætter id fordi der ikke bliver oprettet nogen 
+                    //forældretabel og dermed bliver id ikke sat automatisk
                     ID = 101,
                     FirstMidName = "Jeanette",
                     LastName = "Borring-Møller",
